@@ -14,22 +14,25 @@ p {
   font-family: verdana;
   font-size: 20px;
 }
-    
-</style>
+/* Memberikan highlight sedikit agar perubahan terlihat jelas */
+            span {
+                font-weight: underline;
+            }    
+  </style>
 </head>
 <body>
   </head>
   <body>
     <h1>NICOLE ZEFANYA (NIKI)</h1>
-    <p><b>Nicole zefanya</b> atau yang biasa kita kenal <b>Niki</b> adalah seorang penyanyi dan penulis lagu asal Indonesia.Niki merupakan artis indonesia dengan
+    <p><span id="Penyanyi"><b>Nicole zefanya</b></span> atau yang biasa kita kenal <b>Niki</b> adalah seorang penyanyi dan penulis lagu asal Indonesia.Niki merupakan artis indonesia dengan
        jumlah penggemar yang banyak yang lebih dari <u>4,6 miliar</u>.Ia juga merupakan artis indonesia pertama yang memasuki top 15 global spotify dengan 
        rekor jumlah pendengar 2,9 miliar,ia pun menjadi monthly listeners terbanyak dalam platform tersebut,yakni pernah mencapai 22,8 juta pendengar
        dan meraih peringkat #317 di dunia pada juli 2025, serta menjadi penyanyi wanita asal Indonesia pertama yang mendapatkan Sertifikasi Emas 
     oleh RIAA (lagunya telah terjual lebih dari 500.000 unit di US) dengan "Every Summertime" </p>
 
     <h1>Kehidupan awal dan Pendidikan</h1>
-    <p>Nicole Zefanya, lahir 24 Januari 1999, dibesarkan di Jakarta. Ia tumbuh mendengarkan musik-musik R&B era 1990-an seperti Destiny's Child dan Aaliyah 
-      karena pengaruh ibunya. Ia menempuh pendidikan di Sekolah Pelita Harapan Lippo Village di Tangerang. Di masa sekolah, NIKI menjadi populer dengan cover
+    <p>Nicole Zefanya, lahir 24 Januari 1999, dibesarkan<span id="Kelahiran"> di Jakarta</span>. Ia tumbuh mendengarkan musik-musik R&B era 1990-an seperti Destiny's Child dan Aaliyah 
+      karena pengaruh ibunya. Ia menempuh pendidikan di <span id="Pendidikan yang pernah ditempuh">Sekolah Pelita Harapan Lippo Village di Tangerang.</span> Di masa sekolah, NIKI menjadi populer dengan cover
       dan lagu asli karyanya di YouTube, dengan meraih lebih dari 40.000 subscriber. Ia kemudian menghapus semua video lamanya, tetapi beberapa dari lagu 
       lamanya masih bisa ditemukan di internet.</p>
 
@@ -54,9 +57,26 @@ Niki kemudian merilis EP keduanya yang bertajuk wanna take this downtown?, denga
       Ia juga memberikan julukan kepada NIKI sebagai <u>"ratu baru R&B lokal"</u>, menambahkan bahwa "jika kalian menikmati musisi-musisi seperti Kehlani, SZA, Jhene Aiko, 
       atau H.E.R., kalian akan merasa sangat bangga dan bersyukur NIKI berasal dari Indonesia. NIKI adalah artis lokal dengan kualitas internasional</p>
 
-// code javascript untuk website ini
+// 
     <script>
-      
+       // Fungsi ini akan berjalan otomatis saat halaman selesai dimuat
+            window.onload = function() {
+                // 1. Mengambil input dari user melalui pop-up prompt
+                let namaPenyanyi = prompt("Ketik Nama Penyanyi:", "Nicole Zefanya(NIKI)");
+                let namaKelahiran = prompt("Ketik nama Kelahiran:", "di Jakarta");
+                let namaPendidikanyangpernahditempuh = prompt("Ketik nama Pendidikan yang pernah ditempuh:", "Sekolah Pelita Harapan Lippo Village di Tangerang");
+
+                // 2. Mengganti teks di HTML dengan input dari user
+                // Kita gunakan ID yang sudah dibuat di atas
+                
+                if (penyanyi) {
+                    document.getElementById("penyanyi").innerText = Penyanyi;
+                   
+                }
+                if (kelahiran) document.getElementById("kelahiran").innerText = Kelahiran;
+                if (pendidikanyangpernahditempuh) document.getElementById("pendidikan yang pernah ditempuh").innerText =pendidikan yang pernah ditempuh;
+               
+            };
     </script>
   </body>
 </html>
